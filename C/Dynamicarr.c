@@ -1,9 +1,9 @@
 #include<stdio.h>
 void main()
 {
-    int a[]={0,1,8,0,2,6}
+    int a[]={0,1,8,0,2,6};
     int n=6,pos=0;
-    for(int i=0;i<s;i++)
+    for(int i=0;i<n;i++)
     {
         if(a[i]!=0)
         {
@@ -11,8 +11,10 @@ void main()
             pos++;
         }
     }
-    while(pos<s)
+    while(pos<n)
     {
         a[pos++]=0;
     }
+    for(int i=0;i<n;i++)
+        printf("%d ",a[i]);
 }
